@@ -21,7 +21,7 @@ Estos ejercicios están resueltos usando herramientas de automatización y despl
 
 ## HANDS-ON
 ### <b>1.   [Flujo de Trabajo Serverless](https://aws.amazon.com/es/getting-started/hands-on/create-a-serverless-workflow-step-functions-lambda/?nc1=h_ls) :</b>
-* [Repositorio](https://github.com/DatamadnessDevOps/terraform-certification/tree/main/docker-container)
+* [Repositorio](https://github.com/DatamadnessDevOps/aws-solutions-architect-associate-labs-/tree/main/serveless_basic_workflow)
 * [Solucion]()
 
 ## CONTACTO
