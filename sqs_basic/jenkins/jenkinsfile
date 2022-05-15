@@ -1,0 +1,36 @@
+pipeline{
+    agent{
+        label "test"
+    }
+    stages{
+        stage("Deploy AWS SQS"){
+            steps{
+                dir('terraform') {
+                    sh 'terraform init'
+                    sh 'terraform plan'
+                    sh 'terraform apply --auto-approve'
+                }
+            }
+            post{
+                success{
+                    echo "========Deploy AWS SQS executed successfully========"
+                }
+                failure{
+                    sh "Deploy AWS SQS failed!"
+                    sh 'terraform destroy --auto-approve'
+                }
+            }
+        }
+    }
+    post{
+        always{
+            echo "========always========"
+        }
+        success{
+            echo "========pipeline executed successfully ========"
+        }
+        failure{
+            echo "========pipeline execution failed========"
+        }
+    }
+}

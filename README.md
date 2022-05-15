@@ -15,6 +15,7 @@ Estos ejercicios están resueltos usando herramientas de automatización y despl
 * Linux.
 * GIT (Github).
 * Cuenta AWS (capa gratuita).
+* Jenkins
 
 ## TRAINING OFICIAL DE AWS (gratuito)
 * [AWS Training](https://www.aws.training/)
