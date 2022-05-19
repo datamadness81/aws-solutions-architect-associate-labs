@@ -15,7 +15,6 @@ Estos ejercicios están resueltos usando herramientas de automatización y despl
 * Linux.
 * GIT (Github).
 * Cuenta AWS (capa gratuita).
-* Jenkins
 
 ## TRAINING OFICIAL DE AWS (gratuito)
 * [AWS Training](https://www.aws.training/)
@@ -23,6 +22,9 @@ Estos ejercicios están resueltos usando herramientas de automatización y despl
 ## HANDS-ON
 ### <b>1.   [Flujo de Trabajo Serverless](https://aws.amazon.com/es/getting-started/hands-on/create-a-serverless-workflow-step-functions-lambda/?nc1=h_ls) :</b>
 * [Repositorio](https://github.com/DatamadnessDevOps/aws-solutions-architect-associate-labs-/tree/main/serveless_basic_workflow)
+* [Solucion](https://www.linkedin.com/pulse/solutions-arch-associate-hands-on-john-ramirez/?trackingId=7SXuWoa0LokVUWC2Rv2yKQ%3D%3D)
+### <b>2.   [Implementación Básica AWS SQS](https://aws.amazon.com/es/getting-started/hands-on/send-messages-distributed-applications/?nc1=h_ls) :</b>
+* [Repositorio](https://github.com/DatamadnessDevOps/aws-solutions-architect-associate-labs-/tree/main/sqs_basic)
 * [Solucion](https://www.linkedin.com/pulse/solutions-arch-associate-hands-on-john-ramirez/?trackingId=7SXuWoa0LokVUWC2Rv2yKQ%3D%3D)
 
 ## CONTACTO
