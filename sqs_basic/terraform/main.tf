@@ -16,12 +16,12 @@ resource "aws_sqs_queue" "orders_queue" {
       "Sid": "__owner_statement",
       "Effect": "Allow",
       "Principal": {
-        "AWS": "${data.aws_caller_identity.aws_account_id.account_id}"
+        "AWS": "${data.aws_caller_identity.aws_admin_arn.arn}"
       },
       "Action": [
         "SQS:*"
       ],
-      "Resource": "arn:aws:sqs:${data.aws_region.default_region.name}:${data.aws_caller_identity.aws_account_id.account_id}:"
+      "Resource": "arn:aws:sqs:us-east-1:${data.aws_caller_identity.aws_admin_arn.account_id}:Orders"
     }
   ]
 }

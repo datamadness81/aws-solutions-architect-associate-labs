@@ -25,7 +25,7 @@ Estos ejercicios están resueltos usando herramientas de automatización y despl
 * [Solucion](https://www.linkedin.com/pulse/solutions-arch-associate-hands-on-john-ramirez/?trackingId=7SXuWoa0LokVUWC2Rv2yKQ%3D%3D)
 ### <b>2.   [Implementación Básica AWS SQS](https://aws.amazon.com/es/getting-started/hands-on/send-messages-distributed-applications/?nc1=h_ls) :</b>
 * [Repositorio](https://github.com/DatamadnessDevOps/aws-solutions-architect-associate-labs-/tree/main/sqs_basic)
-* [Solucion](https://www.linkedin.com/pulse/solutions-arch-associate-hands-on-john-ramirez/?trackingId=7SXuWoa0LokVUWC2Rv2yKQ%3D%3D)
+* [Solucion](https://www.linkedin.com/pulse/solutions-arch-associate-hands-on-john-ramirez-1c/?trackingId=XzlHeMCCQ3mo87EnItIS1w%3D%3D)
 
 ## CONTACTO
 * Twitter: [@data_madness](https://twitter.com/data_madness)
