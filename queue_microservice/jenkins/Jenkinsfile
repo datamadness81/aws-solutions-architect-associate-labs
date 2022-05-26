@@ -1,0 +1,55 @@
+pipeline {
+    agent {
+        label 'test'
+    }
+    environment {
+        AWS_ACCESS_KEY_ID = credentials('aws_key_access')
+        AWS_SECRET_ACCESS_KEY = credentials('aws_secret_key')
+    }
+    stages {
+        stage('Build Microservices Queue') {
+            steps {
+                dir('terraform') {
+                    sh 'terraform init'
+                    sh 'terraform plan'
+                    sh 'terraform apply --auto-approve'
+                }
+            }
+            post {
+                failure {
+                    sh 'terraform destroy --auto-approve'
+                    echo 'Infrastructure deployment failed, please review the logs'
+                }
+                success {
+                    echo 'Microservices queue deployed!'
+                }
+            }
+        }
+        stage('Test Microservices Queue Workflow') {
+            steps {
+                dir('scripts') {
+                    sh 'chmod u+x start_execution.sh'
+                    sh './start_execution.sh'
+                }
+            }
+            post {
+                failure {
+                    echo 'Testing Failed! Please check the logs'
+                }
+                success {
+                    echo 'Testing has been successful!'
+                }
+            }
+        }
+        stage('Clean Infrastructure & Workspace') {
+            steps {
+                dir('terraform') {
+                    sh 'terraform destroy --auto-approve'
+                    echo 'Infrastructure destroyed!'                       
+                    cleanWs()                                                  
+                    echo 'Jenkins Workspace has been wipe out'                 
+                }  
+            }			
+        }
+    }
+}

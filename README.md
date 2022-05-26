@@ -15,6 +15,8 @@ Estos ejercicios están resueltos usando herramientas de automatización y despl
 * Linux.
 * GIT (Github).
 * Cuenta AWS (capa gratuita).
+* Jenkins
+* AWS CLI V2
 
 ## TRAINING OFICIAL DE AWS (gratuito)
 * [AWS Training](https://www.aws.training/)
@@ -26,8 +28,11 @@ Estos ejercicios están resueltos usando herramientas de automatización y despl
 ### <b>2.   [Implementación Básica AWS SQS](https://aws.amazon.com/es/getting-started/hands-on/send-messages-distributed-applications/?nc1=h_ls) :</b>
 * [Repositorio](https://github.com/DatamadnessDevOps/aws-solutions-architect-associate-labs-/tree/main/sqs_basic)
 * [Solucion](https://www.linkedin.com/pulse/solutions-arch-associate-hands-on-john-ramirez-1c/?trackingId=XzlHeMCCQ3mo87EnItIS1w%3D%3D)
+### <b>3.   [Microservicios Basados en AWS SQS](https://aws.amazon.com/es/getting-started/hands-on/orchestrate-microservices-with-message-queues-on-step-functions/?nc1=h_ls) :</b>
+* [Repositorio](https://github.com/DatamadnessDevOps/aws-solutions-architect-associate-labs-/tree/main/sqs_basic) 
+* [Solucion](https://www.linkedin.com/pulse/solutions-arch-associate-hands-on-john-ramirez-1c/?trackingId=XzlHeMCCQ3mo87EnItIS1w%3D%3D)
 
-## CONTACTO
+ ## CONTACTO
 * Twitter: [@data_madness](https://twitter.com/data_madness)
 * Email: datamadness81@gmail.com
 * Linkedin: [https://www.linkedin.com/in/john-ramireztech/](https://www.linkedin.com/in/john-ramireztech/)
