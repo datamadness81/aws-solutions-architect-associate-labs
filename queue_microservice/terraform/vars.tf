@@ -39,3 +39,8 @@ variable "lambda_name" {
   default     = "Inventory"
 }
 
+variable "account_id" {
+  description = "AWS Account ID"
+  type        = string
+  default     = "700050813749"
+}

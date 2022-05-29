@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'test'
+        label 'master'
     }
     environment {
         AWS_ACCESS_KEY_ID = credentials('aws_key_access')
@@ -9,9 +9,8 @@ pipeline {
     stages {
         stage('Build Microservices Queue') {
             steps {
-                dir('terraform') {
+                dir('queue_microservice/terraform') {
                     sh 'terraform init'
-                    sh 'terraform plan'
                     sh 'terraform apply --auto-approve'
                 }
             }
@@ -27,7 +26,7 @@ pipeline {
         }
         stage('Test Microservices Queue Workflow') {
             steps {
-                dir('scripts') {
+                dir('queue_microservice/scripts') {
                     sh 'chmod u+x start_execution.sh'
                     sh './start_execution.sh'
                 }
@@ -38,12 +37,14 @@ pipeline {
                 }
                 success {
                     echo 'Testing has been successful!'
+                    sleep(time: 5, unit: "MINUTES")
+                    echo '5 minutes until proceed with the Clean Infrastructure & Workspace stage'
                 }
             }
         }
         stage('Clean Infrastructure & Workspace') {
             steps {
-                dir('terraform') {
+                dir('queue_microservice/terraform') {
                     sh 'terraform destroy --auto-approve'
                     echo 'Infrastructure destroyed!'                       
                     cleanWs()                                                  
